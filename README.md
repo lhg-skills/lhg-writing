@@ -12,8 +12,8 @@
 
 1. **Scope** — confirm genre (WeChat article / blog / Xiaohongshu / Q&A / docs), audience, and desired effect.
 2. **Style fingerprint** — from 1–3 of the user's own pieces, build a *measurable* style card (sentence-length distribution, function-word tics, punctuation habits, paragraph rhythm, person/tense, rhetorical patterns, emotional arc) instead of vague praise like "sharp prose." Method: computational stylometry (Mosteller & Wallace 1964; Burrows' Delta; Huang et al. 2024 LIP).
-3. **Outline → sections** — outline first, then write section by section, under the hard constraints of **Orwell's six rules** (1946): no dead metaphors, short words over long ones, cut every cuttable word, active voice, everyday Chinese over jargon, and clarity over rules.
-4. **AI-flavor diagnosis** — check against a Chinese AI-tell fingerprint library (self-authored entries; methodology inspired by community practice): graded signals (strong/medium/weak) with verbatim quotes, e.g. overused "不是 X 而是 Y", hedge-stacking, template openings ("随着 AI 技术的发展…"), hollow blessing closings ("愿你…"), forced uplift, fake anecdotes, concept-stacking without specifics.
+3. **Outline → sections** — outline first, then write section by section, under the hard constraints of **Orwell's six rules** (1946): no dead metaphors, short words over long ones, cut every cuttable word, active voice, everyday Chinese over jargon, and clarity over rules (see the "极简表达 / Lean Expression" chapter for the actionable slimming rules).
+4. **AI-flavor diagnosis** — check against a Chinese AI-tell fingerprint library (self-authored entries; methodology inspired by community practice): graded signals (strong/medium/weak) with verbatim quotes, e.g. overused "不是 X 而是 Y", hedge-stacking, template openings ("随着 AI 技术的发展…"), hollow blessing closings ("愿你…"), forced uplift, fake anecdotes, concept-stacking without specifics (use the 6-dimension checklist in the "AI 味检测清单 / AI-Flavor Checklist" chapter for rewrites).
 5. **False-positive guardrails** — single rhetorical devices are fine; only density counts. When in doubt, don't flag.
 6. **Consistency check** — terminology, person, tense, numbers, and stance across sections.
 7. **Fact check** — two passes: de-AI the prose first, then verify nothing was invented (no fabricated details, numbers, or quotes).
@@ -51,8 +51,8 @@ MIT — see [LICENSE](LICENSE).
 
 1. **定体裁与读者** — 公众号长文 / 博客 / 小红书 / 知乎回答 / 文档，给谁看、要达到什么效果。
 2. **风格指纹提取** — 用用户 1–3 篇代表作产出**可测量的风格指纹卡**（句长分布、高频虚词与口头禅、标点习惯、段落节奏、人称视角、常用句式、情绪曲线），不用"文笔犀利"这类玄学描述。方法：计算风格学（Mosteller & Wallace 1964；Burrows' Delta；Huang et al. 2024 LIP）。
-3. **大纲→逐节写作** — 先出大纲再逐节写，全程受 **Orwell 六规则**（1946）硬约束：不用陈词滥调、能短不用长、能删就删、主动语态、日常中文优先于黑话、清楚优先于规则。
-4. **AI 味诊断** — 按自研中文指纹库逐处检查并引用原句，信号分强/中/弱三级："不是 X 而是 Y"滥用、反复让步两头讨好、万能套话开头、"愿你"式祝福收尾、强行拔高、模板化假故事、概念扎堆缺具体等。
+3. **大纲→逐节写作** — 先出大纲再逐节写，全程受 **Orwell 六规则**（1946）硬约束：不用陈词滥调、能短不用长、能删就删、主动语态、日常中文优先于黑话、清楚优先于规则（瘦身刀法见"极简表达"章）。
+4. **AI 味诊断** — 按自研中文指纹库逐处检查并引用原句，信号分强/中/弱三级："不是 X 而是 Y"滥用、反复让步两头讨好、万能套话开头、"愿你"式祝福收尾、强行拔高、模板化假故事、概念扎堆缺具体等（动手改写用"AI 味检测清单"章的 6 维清单）。
 5. **防误判阈值** — 单次修辞是好文笔，只看密度；拿不准的宁可不报。
 6. **一致性校验** — 术语、人称、时态、数字口径、观点前后统一。
 7. **事实核查** — 两遍处理：先改写去 AI 味，再检查没有编造不存在的事实、数字、引用。
