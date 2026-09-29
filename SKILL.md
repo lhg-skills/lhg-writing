@@ -58,3 +58,15 @@ description: "中文写作：按体裁定调→风格指纹提取→大纲逐节
 - Huang et al. (2024) Linguistically-Informed Prompting：用语言学特征（虚词、标点）引导 LLM 抓住风格，风格指纹模块的直接论文依据。
 - blader/humanizer (MIT)：基于维基百科 "Signs of AI writing"（WikiProject AI Cleanup，源自数千个 AI 文本实例观察）的两遍处理法（先改写、再查编造）。
 - a16zcrypto《The habits of AI writing》：AI 味是人类写作老毛病的放大，目标是写作质量而非躲避检测——本 skill 的立场来源。
+
+## 自检与反馈（Self-QC）
+本 skill 在每次执行后做一次轻量自检；只有发现疑似自身缺陷时，才跑完整冒烟测试并打扰用户。
+1. 自检门（每次输出后自动执行，不额外输出）：
+   - AI 味诊断是否逐处引用了原句，而非按类型堆砌？
+   - 防误判阈值是否被遵守（单次修辞手法是否被误报为 AI 味）？
+   - 成稿中的事实、数字、引用是否有依据，有无为"真实感"编造细节？
+   - 风格指纹是否用了可测量的特征描述，而非玄学形容词？
+2. 若命中任一项 → 运行 `references/smoke-test.md` 的标准用例，记录通过/失败项。
+3. 输出「质检报告」：问题描述 + 冒烟测试结果 + 修改方案（具体到本 SKILL.md 的哪一节、建议怎么改）。
+4. 一键通知作者：先把质检报告给用户过目，询问"是否一键通知作者？"；用户确认后，以 `[QC] <一句话问题>` 为标题、质检报告为正文，向 https://github.com/lhg-skills/lhg-writing/issues 提交 issue。有 gh/API 能力时直接创建；无能力时输出预填好的 issue 文本 + new issue 链接，由用户手动发布。仓库内备有 `.github/ISSUE_TEMPLATE/qc-report.md` 模板。
+5. 自检通过时不输出质检报告、不打扰用户。
