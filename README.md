@@ -1,5 +1,10 @@
 # lhg-writing · 中文写作
 
+> **一句话**：写出清晰、有观点、有人味的中文：风格指纹提取 → Orwell 六规则写作 → AI 味诊断 → 一致性校验。
+>
+> **一键安装**：`npx skills add lhg-skills/lhg-writing`
+
+
 [English](#english) | [中文](#中文)
 
 ---
@@ -71,6 +76,39 @@ MIT — 详见 [LICENSE](LICENSE)。
 
 ---
 
+
+## 什么时候用 / 什么时候不用
+
+**用它，当你**：
+- 公众号长文、博客、小红书、知乎回答等中文写作
+- 想去掉稿子里的 AI 味，但目标是写得好、不是躲检测
+
+**别用它，当你**：
+- 英文写作
+- 纯洗稿、伪原创
+
+---
+
+## lhg-skills 矩阵
+
+刘洪光出品的中文 Agent Skills，全开源：
+
+| Skill | 名称 | 一句话 |
+|---|---|---|
+| `lhg-writing` | 中文写作 | 风格指纹 → Orwell 六规则 → AI 味诊断，写出有人味的中文 |
+| `lhg-slides` | HTML 演示文稿 | 大纲/文档一键生成可编辑的单文件 HTML slides |
+| `lhg-trend` | 近30天热点扫描 | 话题火不火、为什么火、还能不能追 |
+| `lhg-deep-research` | 深度调研 | 多源检索 → 结构化中文调研报告 |
+| `lhg-benchmark-topic-factory` | 对标拆解选题工厂 | 找对标 → 逆向 100 条选题库 → 口播文案 |
+| `lhg-net` | 互联网能力层 | 中文优先多平台取数，取不到诚实说 |
+| `lhg-craft` | AI 编程工程规范 | 分级澄清 → TDD → 独立评审 → 证据门禁 |
+| `lhg-debug` | 系统化调试 | 复现 → 定位 → 修复 → 验证 |
+| `lhg-secure` | 代码安全审计 | 九维度扫描 + 对抗验证，分级风险清单 |
+| `lhg-finder` | 找 skill 质检门 | 装第三方 skill 前的 blocker 检查 + 六维评分 |
+
+安装任意一个：`npx skills add lhg-skills/<上表 slug>`
+
+---
 
 ## 出品：刘洪光
 
