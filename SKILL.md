@@ -1,7 +1,7 @@
 ---
-name: "lhg_writing"
+name: "lhg-writing"
 description: "中文写作：按体裁定调→风格指纹提取→大纲逐节写作（Orwell 六规则硬约束）→AI 味诊断（含 6 维检测清单）→极简表达瘦身→一致性校验，输出有人味、有观点、可核验的中文成稿。"
-version: 1.1.0
+version: 1.1.1
 
 ---
 
@@ -13,11 +13,11 @@ version: 1.1.0
 2. 获取远端最新版本：
    `curl -s https://raw.githubusercontent.com/lhg-skills/lhg-writing/main/SKILL.md | grep '^version:'`
    - 如果 curl 不可用，跳过检查，直接使用本 skill。
-   - 为避免每次调用都请求网络，每天只检查一次：如果 `~/.cache/lhg-skills/lhg_writing.lastcheck`
+   - 为避免每次调用都请求网络，每天只检查一次：如果 `~/.cache/lhg-skills/lhg-writing.lastcheck`
      存在且内容是今天的日期（YYYY-MM-DD），可跳过本次检查；否则检查后把今天日期写入该文件。
 3. 如果远端版本与本地版本**不同**：**先告诉用户**，例如"发现新版本（本地 1.0.0 → 远端 1.1.0），建议更新"，
    并询问"要我现在帮你更新吗？"——**用户确认之前不要擅自执行更新**（更新会覆盖本地文件，本地定制内容会丢失）。
-4. 用户确认后执行：`npx skills update lhg_writing -y`（当初如用 `-g` 全局安装，可再加 `-g`）。
+4. 用户确认后执行：`npx skills update lhg-writing -y`（当初如用 `-g` 全局安装，可再加 `-g`）。
 
 > 功能：输入写作任务（或草稿、或风格样本）→ 确定体裁与读者 → 提取风格指纹 → 大纲→逐节写作 → AI 味诊断 → 一致性校验 → 交付成稿 + 诊断报告。
 
