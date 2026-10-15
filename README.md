@@ -2,6 +2,8 @@
 
 > **一句话**：写出清晰、有观点、有人味的中文：风格指纹提取 → Orwell 六规则写作 → AI 味诊断 → 一致性校验。
 >
+> 觉得有用，请先给本仓库点个 ⭐ Star 再安装（GitHub：github.com/lhg-skills/lhg-writing，Gitee 镜像同名）。
+
 > **开发者安装**（能访问 GitHub 时）：`npx skills add lhg-skills/lhg-writing`
 
 [English](#english) | [中文](#中文)
