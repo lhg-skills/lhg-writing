@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="360" viewBox="0 0 1200 360"
+     role="img" aria-labelledby="title desc">
+  <title id="title">中文写作 — 写出有人味的中文</title>
+  <desc id="desc">按体裁定调、提炼风格指纹、Orwell 六规则逐节写，再过 AI 味诊断与一致性校验。</desc>
+
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="14" fill="#FAF6EF"/>
+  <rect x="1" y="1" width="1198" height="358" rx="14" fill="none" stroke="#E3DCCB" stroke-width="1.5"/>
+
+  <g id="title-block">
+    <rect x="64" y="62" width="12" height="12" fill="#D97706"/>
+    <text class="mono" x="86" y="74" font-size="17" letter-spacing="2" fill="#6B7280">中文写作 · SKILL</text>
+    <text class="sans" x="64" y="152" font-size="72" font-weight="700" fill="#1F2937">中文写作</text>
+    <text class="sans" x="64" y="196" font-size="26" font-weight="700" fill="#A63A2A">写出有人味的中文</text>
+    <text class="sans" x="64" y="238" font-size="21" fill="#1F2937">风格指纹 → 六规则写作 → AI 味诊断。</text>
+  </g>
+
+  <line x1="700" y1="56" x2="700" y2="256" stroke="#E3DCCB" stroke-width="1.5"/>
+
+  <g id="proof">
+    <text class="sans" x="740" y="74" font-size="17" fill="#6B7280">交稿前它帮你过的关</text>
+    <text class="mono" x="740" y="118" font-size="20" font-weight="700" fill="#D97706">6 条</text>
+    <text class="sans" x="791" y="118" font-size="22" font-weight="700" fill="#1F2937">Orwell 写作规则</text>
+    <text class="mono" x="740" y="164" font-size="20" font-weight="700" fill="#D97706">6 维</text>
+    <text class="sans" x="791" y="164" font-size="22" font-weight="700" fill="#1F2937">AI 味检测清单</text>
+    <text class="mono" x="740" y="210" font-size="20" font-weight="700" fill="#D97706">逐节写</text>
+    <text class="sans" x="814" y="210" font-size="22" font-weight="700" fill="#1F2937">大纲 + 一致性校验</text>
+  </g>
+
+  <line x1="64" y1="288" x2="1136" y2="288" stroke="#E3DCCB" stroke-width="1.5"/>
+  <g id="install">
+    <text class="mono" x="64" y="327" font-size="16" fill="#6B7280">安装</text>
+    <text class="mono" x="140" y="327" font-size="20" font-weight="700" fill="#A63A2A">npx skills add lhg-skills/lhg-writing</text>
+  </g>
+</svg>
